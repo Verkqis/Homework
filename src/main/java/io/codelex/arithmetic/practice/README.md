@@ -2,9 +2,13 @@
 
 # Exercise #1 
 
+See [Exercise1.java](./Exercise1.java)
+
 Write a Java program to accept two integers and return true if the either one is 15 or if their sum or difference is 15.
 
 # Exercise #2
+
+See [CheckOddEven.java](./CheckOddEven.java)
 
 Write a program called CheckOddEven which prints "Odd Number" if the int variable “number” is odd, or “Even Number” otherwise. The program shall always print “bye!” before exiting.
 
@@ -21,9 +25,13 @@ The average is 50.5
 
 # Exercise #4
 
+See [Product1ToN.java](./Product1ToN.java)
+
 Write a program called Product1ToN to compute the product of integers from 1 to 10 (i.e., 1×2×3×...×10), as an int. Take a note that it is the same as factorial of N.
 
 # Exercise #5
+
+See [GuessTheNumberGame.java](./GuessTheNumberGame.java)
 
 Write a program that picks a random number from 1-100. Give the user a chance to guess it. If they get it right, tell them so. If their guess is higher than the number, say "Too high." If their guess is lower than the number, say "Too low." Then quit. (They don't get any more guesses for now.)
 
@@ -50,6 +58,8 @@ You guessed it!  What are the odds?!?
 
 # Exercise #6
 
+See [CozaLozaWoza.java](./CozaLozaWoza.java)
+
 Write a program called CozaLozaWoza which prints the numbers 1 to 110, 11 numbers per line. The program shall print "Coza" in place of the numbers which are multiples of 3, "Loza" for multiples of 5, "Woza" for multiples of 7, "CozaLoza" for multiples of 3 and 5, and so on. The output shall look like:
 
 ```
@@ -70,6 +80,8 @@ meters. The formula in Math notation is:
 *Note:* The correct value is -490.5m.
 
 # Exercise #8
+
+See [CalculateOvertime.java](./CalculateOvertime.java)
 
 Foo Corporation needs a program to calculate how much to pay their hourly employees. The US Department of Labor
 requires that employees get paid time and a half for any hours over 40 that they work in a single week. For example, if an
@@ -94,6 +106,8 @@ method that calls this method for each of these employees:
 | Employee 3 | $10.00 | 73 |
 
 # Exercise #9
+
+See [BodyMassIndex.java](./BodyMassIndex.java)
 
 Write a program that calculates and displays a person's body mass index (BMI). A person's BMI is calculated with the following formula: ```BMI = weight x 703 / height ^ 2```. Where weight is measured in pounds and height is measured in inches. Display a message indicating whether the person has optimal weight, is underweight, or is overweight. A sedentary person's weight is considered optimal if his or her BMI is between 18.5 and 25. If the BMI is less than 18.5, the person is considered underweight. If the BMI value is greater than 25, the person is considered overweight.
 

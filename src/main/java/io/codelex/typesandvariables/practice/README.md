@@ -28,6 +28,8 @@ See [Casting.java](./Casting.java)
 
 ## Exercise #4
 
+See [Stored.java](./Stored.java)
+
 Write a program that stores your name and year of birth into variables, and displays their values on the screen.
 
 Make sure that you use two variables, and that the variable that holds your name is the best type for such a variable, and that the variable that holds the year is the best type for that variable.
@@ -39,6 +41,8 @@ My name is Juan Valdez and I was born in 1995.
 ```
 
 ## Exercise #5
+
+See [Schedule.java](./Schedule.java)
 
 Use several variables to store the names of your classes and their teachers. Then, display a nice little table displaying your schedule.	Just FYI, my column of courses has a width of 26 characters, and the teacher column has a width of 15. The first and last lines are a plus sign, fifty dashes (a.k.a. minus signs) and another plus sign.
 
@@ -59,17 +63,25 @@ Your table doesn't need to look exactly like this, or even line up. I used a tot
 
 ## Exercise #6
 
+See [SingleDigitNumSum.java](./SingleDigitNumSum.java)
+
 Write a program that asks the user to enter a series of single digit numbers and calculate the sum of all the numbers.
 
 ## Exercise #7
+
+See [StringUpperCaseLetters.java](./StringUpperCaseLetters.java)
 
 Write a program that prompts the user to enter a string and displays the number of the uppercase letters in the string.
 
 ## Exercise #8
 
+See [MinutesToYears.java](./MinutesToYears.java)
+
 Write a Java program to convert minutes into a number of years and days.
 
 ## Exercise #9
+
+See [Exercise9.java](./Exercise9.java)
 
 Write a Java program to takes the user for a distance (in meters) and the time was taken (as three numbers: hours, minutes, seconds), and display the speed, in meters per second, kilometers per hour and miles per hour (hint: 1 mile = 1609 meters).
 

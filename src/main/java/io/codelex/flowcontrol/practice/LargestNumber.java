@@ -1,10 +1,10 @@
 package io.codelex.flowcontrol.practice;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class LargestNumber {
 
-    //TODO: Write a Java program to to find the largest of three numbers.
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
@@ -17,12 +17,13 @@ public class LargestNumber {
         System.out.print("Input the 3rd number: ");
         int num3 = in.nextInt();
 
-        /*
-        todo - expected output:
-        Input the 1st number: 25
-        Input the 2nd number: 78
-        Input the 3rd number: 87
-         */
+        int[] numbers = {num1, num2, num3};
+        Arrays.sort(numbers);
+
+        System.out.println("The 1st number: " + numbers[0]);
+        System.out.println("The 2nd number: " + numbers[1]);
+        System.out.println("The 3rd number: " + numbers[2]);
+
     }
 
 }

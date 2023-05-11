@@ -4,50 +4,50 @@ import java.util.Scanner;
 
 public class TenBillion {
 
-    //TODO: Write a Java program that reads an positive integer and count the number of digits the number (less than ten billion) has.
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Input an integer number less than ten billion: ");
 
         long n = in.nextLong();
 
-        /*
-        todo - check if Long
-        if (?) {
-            //todo - check if n is less than zero
-            if (?) {
-                n *= -1;
-            }
-            fixme
-            if (?) {
-                System.out.println("Number is greater or equals 10,000,000,000!");
-            } else {
-                int digits = 1;
-                if (?) {
-                    digits = 2;
-                } else if (?) {
-                    digits = 3;
-                } else if (?) {
-                    digits = 4;
-                } else if (?) {
-                    digits = 5;
-                } else if (?) {
-                    digits = 6;
-                } else if (?) {
-                    digits = 7;
-                } else if (?) {
-                    digits = 8;
-                } else if (?) {
-                    digits = 9;
-                } else if (?) {
-                    digits = 10;
-                }
-                System.out.println("Number of digits in the number: " + digits);
-            }
+        
+        if (n < 0) {
+            System.out.println("Number is negative ");
+        } else if (n >= 0 && n < 10) {
+            int digits = 1;
+            System.out.println("Number of digits in the number: " + digits);
+        } else if (n >= 10 && n < 99) {
+            int digits = 2;
+            System.out.println("Number of digits in the number: " + digits);
+        } else if (n >= 100 && n < 999) {
+            int digits = 3;
+            System.out.println("Number of digits in the number: " + digits);
+        } else if (n >= 1000 && n < 9999) {
+            int digits = 4;
+            System.out.println("Number of digits in the number: " + digits);
+        } else if (n >= 10000 && n < 99999) {
+            int digits = 5;
+            System.out.println("Number of digits in the number: " + digits);
+        } else if (n >= 100000 && n < 999999) {
+            int digits = 6;
+            System.out.println("Number of digits in the number: " + digits);
+        } else if (n >= 1000000 && n < 9999999) {
+            int digits = 7;
+            System.out.println("Number of digits in the number: " + digits);
+        } else if (n >= 10000000 && n < 99999999) {
+            int digits = 8;
+            System.out.println("Number of digits in the number: " + digits);
+        } else if (n >= 100000000 && n < 999999999) {
+            int digits = 9;
+            System.out.println("Number of digits in the number: " + digits);
+        } else if (n >= 1000000000 && n < 9999999999L) {
+            int digits = 10;
+            System.out.println("Number of digits in the number: " + digits);
+        } else if (n >= 10000000000L) {
+            System.out.println("Number is greater or equals 10,000,000,000!");
         } else {
             System.out.println("The number is not a long");
         }
-        */
-    }
 
+    }
 }

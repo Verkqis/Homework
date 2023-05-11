@@ -4,15 +4,14 @@ public class NaturalNumbers {
 
     public static void main(String[] args) {
         int i;
+        int sum = 0;
 
-        System.out.println("The first 10 natural numbers are: ");
-
-        /*
-        todo - write a program in Java to display the first 10 natural numbers
-        for (......) {
-          System.out.println(i);
+        for (i = 1; i <= 10; ++i) {
+            sum = sum + i;
         }
-        */
+
+        System.out.println("The first 10 natural numbers are: " + sum);
+
     }
 
 }

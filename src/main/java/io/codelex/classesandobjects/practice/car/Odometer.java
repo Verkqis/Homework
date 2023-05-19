@@ -1,15 +1,5 @@
-package io.codelex.classesandobjects.practice;
+package io.codelex.classesandobjects.practice.car;
 
 public class Odometer {
-
-    private double odometer = 0;
-
-    public double Odometer(double odometer) {
-        this.odometer = odometer;
-        odometer += odometer;
-        System.out.println("Car curren mileage is: " + odometer);
-        return odometer;
-    }
-
-
+    
 }

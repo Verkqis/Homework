@@ -1,12 +1,25 @@
-package io.codelex.classesandobjects.practice;
-
-import io.codelex.classesandobjects.practice.videostore.Movie;
+package io.codelex.classesandobjects.practice.exercise4;
 
 public class TestMovie {
 
-    Movie firstMovie = new Movie("Casino Royale", "Eon Productions", "PG13");
-    Movie secondMovie = new Movie("Glass", "Buena Vista International", "PG-13");
-    Movie thirdMovie = new Movie("Spider-Man: Into the Spider-Verse", "Columbia Pictures", "PG");
-    
+
+    public static void main(String[] args) {
+
+        Movie firstMovie = new Movie("Casino Royale", "Eon Productions", "PG13");
+        Movie secondMovie = new Movie("Glass", "Buena Vista International", "PG13");
+        Movie thirdMovie = new Movie("Spider-Man: Into the Spider-Verse", "Columbia Pictures", "PG");
+
+        Movie[] movies = {
+                firstMovie,
+                secondMovie,
+                thirdMovie
+        };
+
+
+        firstMovie.getPG(movies);
+
+    }
+
 
 }
+

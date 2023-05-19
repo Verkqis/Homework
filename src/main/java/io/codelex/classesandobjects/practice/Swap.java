@@ -1,4 +1,4 @@
-package io.codelex.classesandobjects.practice.swappoints;
+package io.codelex.classesandobjects.practice;
 
 import java.awt.*;
 

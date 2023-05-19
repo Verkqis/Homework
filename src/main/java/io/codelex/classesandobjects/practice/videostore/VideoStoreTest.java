@@ -17,21 +17,14 @@ public class VideoStoreTest {
 
             int n = keyboard.nextInt();
 
-            switch (n) {
-                case 0:
-                    System.exit(0);
-                case 1:
-                    fillVideoStore(keyboard);
-                    break;
-                case 2:
-                    rentVideo(keyboard);
-                    break;
-                case 3:
-                    returnVideo(keyboard);
-                    break;
-                default:
-                    break;
-            }
+//            switch (n) {
+//                case 0 -> System.exit(0);
+//                case 1 -> fillVideoStore(keyboard, videoStore);
+//                case 2 -> rentVideo(keyboard, videoStore);
+//                case 3 -> returnVideo(keyboard, videoStore);
+//                default -> {
+//                }
+//            }
 
         }
     }

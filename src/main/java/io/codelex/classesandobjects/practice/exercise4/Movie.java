@@ -1,6 +1,6 @@
-package io.codelex.classesandobjects.practice.videostore;
+package io.codelex.classesandobjects.practice.exercise4;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Movie {
 
@@ -20,19 +20,37 @@ public class Movie {
         this.rating = "PG";
     }
 
-    public ArrayList getPG(ArrayList<Movie> movies) {
 
-        ArrayList<String> Movie = new ArrayList<String>();
-        for (String el : Movie) {
-            if ("PG".equals(Movie)) {
-                Movie.add(el);
-            }
-        }
-
-        return Movie;
+    public String getTitle() {
+        return title;
     }
 
     public String getRating() {
         return rating;
+    }
+
+    public void getPG(Movie[] movie) {
+        Movie[] withPG = new Movie[10];
+        int count = 0;
+
+        for (int i = 0; i < movie.length; i++) {
+            if (movie[i].getRating().equals("PG")) {
+                withPG[count] = movie[i];
+                count++;
+                System.out.println("This is PG Movie! ");
+            } else {
+                System.out.println("Didnt find PG Movie! ");
+            }
+
+        }
+        System.out.println(Arrays.deepToString(withPG));
+    }
+
+
+    @Override
+    public String toString() {
+        return title + " " +
+                studio + " " +
+                rating + " ";
     }
 }

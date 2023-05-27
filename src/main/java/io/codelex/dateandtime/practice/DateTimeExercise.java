@@ -1,5 +1,6 @@
 package io.codelex.dateandtime.practice;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 public class DateTimeExercise {
@@ -17,6 +18,28 @@ public class DateTimeExercise {
     }
 
     public static LocalDate findNextFriday13th(LocalDate from) {
-        throw new UnsupportedOperationException();
+        from = LocalDate.now();
+        LocalDate date = from.plusDays(1);
+
+        while (true) {
+            if (date.getDayOfMonth() == 13 && date.getDayOfWeek() == DayOfWeek.FRIDAY) {
+                System.out.println("Next 13.friday is: " + date);
+                return date;
+            }
+            date = date.plusDays(1);
+        }
+    }
+
+    public static void main(String[] args) {
+
+        System.out.println("In 2017 New Year's eve was in : " + createNewYearsEve2017().getDayOfWeek());
+
+        LocalDate[] twoDates = getTwoLocalDates();
+        System.out.println("Date 1: " + twoDates[0]);
+        System.out.println("Date 2: " + twoDates[1]);
+
+
+        findNextFriday13th(LocalDate.now());
+
     }
 }

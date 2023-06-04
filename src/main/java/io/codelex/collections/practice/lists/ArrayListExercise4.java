@@ -15,12 +15,17 @@ public class ArrayListExercise4 {
         colors.add("White");
         colors.add("Black");
 
-        //fixme
-        //String element = ...;
-        //System.out.println("First element: " + element);
+        List<String> colors2 = new ArrayList<>();
+        colors2.add("Brown");
+        colors2.add("Pink");
+        colors2.add("Blue");
+        colors2.add("Gray");
+        colors2.add("Yellow");
 
-        //fixme
-        //element = ...;
-        //System.out.println("Third element: " + element);
+        String element = colors2.get(0);
+        System.out.println("First element: " + element);
+
+        element = colors2.get(2);
+        System.out.println("Third element: " + element);
     }
 }

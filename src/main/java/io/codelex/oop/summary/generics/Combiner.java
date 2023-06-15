@@ -1,14 +1,16 @@
 package io.codelex.oop.summary.generics;
 
-import java.math.BigDecimal;
-
 public class Combiner {
 
-    //Fix this method so it can receive two any kind of objects
-    //Test the functionality
+    public static <T> void combineTwoItems(T first, T second) {
+        System.out.println("First item: " + first.toString() + "; Second item: " + second.toString());
+    }
 
-    public static String combineTwoItems(Integer first, BigDecimal second) {
-        return "First item: " + first.toString() + "; Second item: " + second.toString();
+    public static void main(String[] args) {
+
+        combineTwoItems(122.222, "String");
+
+        
     }
 
 }

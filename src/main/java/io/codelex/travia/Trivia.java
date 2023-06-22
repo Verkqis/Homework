@@ -29,7 +29,6 @@ public class Trivia {
                     .ifPresent(entry -> {
                         Integer key = entry.getKey();
                         String value = entry.getValue();
-                        System.out.println(key);
                         System.out.println(value);
                         System.out.println("Possible right answers: ");
                         List<Integer> answers = new ArrayList<>();

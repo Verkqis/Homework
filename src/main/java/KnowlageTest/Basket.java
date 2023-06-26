@@ -5,65 +5,29 @@ import java.util.List;
 
 public class Basket<T> {
 
-    private T item;
-    private Integer numberOfItems;
-
-    private List<T> basket = new ArrayList<>();
+    private List<T> basket;
 
     public Basket() {
         this.basket = new ArrayList<>();
     }
 
-    public void addToBasket(T item) {
+    public void addToBasket(T item) throws BasketFullException {
         if (basket.size() == 10) {
-            throw new RuntimeException("BasketFullException");
+            throw new BasketFullException();
         } else {
             basket.add(item);
         }
     }
 
-    public void removeFromBasket(T item) {
+    public void removeFromBasket(T item) throws BasketEmptyException {
         if (basket.isEmpty()) {
-            throw new RuntimeException("BasketEmptyException");
+            throw new BasketEmptyException();
         }
         basket.remove(item);
     }
 
     public void printItems() {
         basket.forEach(System.out::println);
-    }
-    
-    public static void main(String[] args) {
-
-        Apple first = new Apple();
-        Apple second = new Apple();
-        Apple third = new Apple();
-        Apple forth = new Apple();
-        Apple fifth = new Apple();
-        Apple sixth = new Apple();
-        Apple seventh = new Apple();
-        Apple eight = new Apple();
-        Apple ninth = new Apple();
-        Apple ten = new Apple();
-        Apple eleventh = new Apple();
-
-        Basket<Apple> basketForApples = new Basket<>();
-        basketForApples.addToBasket(first);
-        basketForApples.addToBasket(second);
-        basketForApples.addToBasket(third);
-        basketForApples.addToBasket(forth);
-        basketForApples.addToBasket(fifth);
-        basketForApples.addToBasket(sixth);
-        basketForApples.addToBasket(seventh);
-        basketForApples.addToBasket(eight);
-        basketForApples.addToBasket(ninth);
-        basketForApples.addToBasket(ten);
-
-        basketForApples.printItems();
-
-        Mushroom firstM = new Mushroom();
-
-
     }
 
 }

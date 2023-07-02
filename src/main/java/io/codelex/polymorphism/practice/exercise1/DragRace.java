@@ -1,5 +1,8 @@
 package io.codelex.polymorphism.practice.exercise1;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Take a look at the cars in this package.
  * 1. Extract common behaviour to an interface called Car, and use it in the all classes.
@@ -14,5 +17,49 @@ public class DragRace {
 
     public static void main(String[] args) {
 
+
+        Car audi = new Audi("Audi RS6");
+        Car bmw = new Bmw("BMW M5");
+        Car tesla = new Tesla("Tesla Model X");
+        Car lexus = new Lexus("Lexus IS200");
+        Car nissan = new Nissan("Nissan GTR");
+        Car volvo = new Volvo("Volvo XC90");
+
+        List<Car> cars = new ArrayList<>();
+
+//        cars.add(audi);
+//        cars.add(bmw);
+//        cars.add(tesla);
+        cars.add(lexus);
+        cars.add(nissan);
+//        cars.add(volvo);
+
+
+        for (int i = 1; i <= 10; i++) {
+            for (Car car : cars) {
+                car.startEngine();
+                car.speedUp();
+                car.slowDown();
+
+                if (i == 3 && car instanceof Nitro nitroCar) {
+                    nitroCar.useNitrousOxideEngine();
+                }
+            }
+
+        }
+
+        Car fastestCar = null;
+        Integer maxSpeed = 0;
+
+        for (Car car : cars) {
+            if (car.speedUp() > maxSpeed) {
+                maxSpeed = car.speedUp();
+                fastestCar = car;
+            }
+        }
+
+        if (fastestCar != null) {
+            System.out.println("Fastest car is: " + fastestCar.getName() + " with " + fastestCar.showCurrentSpeed() + " km/h speed! ");
+        }
     }
 }
